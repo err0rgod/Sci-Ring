@@ -43,6 +43,44 @@ h7{
     font-family: Arial, Helvetica, sans-serif;
     outline: black;
 }
+.sidenav {
+  width: 60px;
+  position: fixed;
+  z-index: 2;
+  top: 20px;
+  right: 10px;
+  background: #00ffd5;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border: #00ffd5;
+  border-radius: 10px;
+  margin-top: 350px;
+  
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ff9100;
+  display: block;
+}
+
+.sidenav a:hover {
+  transform: scale(1.2);
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 .section-header .section-header-border {
   margin: 0;
   display: block;
