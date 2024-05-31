@@ -268,7 +268,32 @@ body{
 #mobile{
     display: none;
     align-items: center;
+    
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  
 }
+#mobile li{
+  list-style: none;
+  padding: 2px 20px;
+}
+#mobile li a{
+  text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+    transition: 0.18s ease;
+    text-shadow: #000000;
+}
+#mobile li a:hover,
+#mobile li a .active{
+     color: #00ffdd;
+    
+}
+
+
+
 #close{
     display: none;
 }
