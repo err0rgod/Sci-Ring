@@ -54,8 +54,48 @@ h7{
   padding: 8px 0;
   border: #00ffd5;
   border-radius: 10px;
-  margin-top: 350px;
+  margin-top: 200px;
   
+}
+#shimg{
+  
+  
+  clip-path: circle();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+#lgbw{
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-bottom: 25px;
+  overflow-x: hidden;
+}
+#lgbw a {
+  padding: 6px 8px 6px 6px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ff9100;
+  display: block;
+}
+#lgbw a:hover{
+  transform: scale(1.2);
+
+}
+
+#name{
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mean{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidenav a {
@@ -1090,8 +1130,8 @@ footer .copyright{
 #owercontent{
   display: flex;
   align-items: center;
-
   padding: 50px;
+  
   padding-top: 20px;
   padding-left: 52px;
   
@@ -1111,7 +1151,7 @@ footer .copyright{
   display: flex;
   align-items: center;
 
-  padding: 50px;
+  padding: 15px;
   padding-top: 20px;
   padding-left: 52px;
   
