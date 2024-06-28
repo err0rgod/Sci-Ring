@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spartan' , sans-serif;
+    
 }
 
 h1{
@@ -33,8 +34,8 @@ h4{
     color: #222;
 }
 h6{
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 18px;
 }
 h7{
     font-size: 45px;
@@ -43,6 +44,8 @@ h7{
     font-family: Arial, Helvetica, sans-serif;
     outline: black;
 }
+
+
 .sidenav {
   width: 60px;
   position: fixed;
@@ -57,14 +60,91 @@ h7{
   margin-top: 200px;
   
 }
+#corehead{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+}
 #shimg{
-  
+  scroll-behavior: smooth;
+ 
   
   clip-path: circle();
   display: flex;
   justify-content: center;
   align-items: center;
 
+  
+}
+#corecont img{
+  scroll-behavior: smooth;
+  width: 200px;
+  height: 200px;
+  border: #000000;
+  border-width: 3px;
+
+ 
+ clip-path: circle();
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ 
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#picas img{
+  scroll-behavior: smooth;
+  width: 200px;
+  height: 200px;
+ clip-path: circle();
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ 
+}
+#picas{
+  padding-top: 25px;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-bottom: 50px;
+}
+#pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 50px;
+  width: 50%;
+}
+#corecont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  padding-top: 7px;
+}
+#cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding-left: 50px;
   
 }
 #lgbw{
@@ -172,6 +252,8 @@ button.white{
 }
 body{
     width: 100%;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 #header {
@@ -379,7 +461,12 @@ body{
   transform: scaleX(1);
 }
 
-
+#service{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
 #hero .button-content {
   position: relative;
   z-index: 1;
@@ -1959,4 +2046,125 @@ body {
   }
 }
 
+.album .responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-start;
+}
 
+.album .responsive-container-block.bg {
+  max-width: 1320px;
+  margin: 0 0 0 0;
+  justify-content: space-between;
+}
+
+.album .img {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.album #i9rb {
+  color: black;
+}
+
+.album #ir6i {
+  color: black;
+}
+
+.album #ikz3b {
+  color: black;
+}
+
+.album .responsive-container-block.img-cont {
+  flex-direction: column;
+  max-width: 33.3%;
+  min-height: auto;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.album #ipix {
+  color: black;
+}
+
+.album #ipzoh {
+  color: black;
+}
+
+.album #ig5q8 {
+  color: black;
+}
+
+.album #imtzl {
+  color: black;
+}
+
+.album #i53es {
+  color: black;
+}
+
+.album .img.img-big {
+  height: 50%;
+  margin: 0 0 16px 0;
+}
+
+@media (max-width: 1024px) {
+  .album .img {
+    margin: 0 0 18px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .album .img {
+    max-width: 32.5%;
+    margin: 0 0 0 0;
+  }
+
+  .album .responsive-container-block.bg {
+    flex-direction: column;
+  }
+
+  .album .responsive-container-block.img-cont {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .album .img.img-big {
+    max-width: 49%;
+    margin: 0 0 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .album .img {
+    max-width: 94%;
+    margin: 0 0 25px 0;
+  }
+
+  .album .responsive-container-block.img-cont {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .album .img.img-big {
+    max-width: 94%;
+    margin: 0 0 25px 0;
+  }
+
+  .album .img.img-last {
+    margin: 0 0 5px 0;
+  }
+}
